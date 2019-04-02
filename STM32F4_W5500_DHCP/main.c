@@ -23,15 +23,21 @@
 void W5500_Network_Init(void);
 
 uint8_t socket_sn = 0;
-uint8_t client_sn = 0;
 uint8_t gDataBuff[Data_BuffSize];
 
+/******************************
+* Default Network Information *
+*******************************/
 wiz_NetInfo gWIZNETINFO = { .mac = {0x00, 0x08, 0xdc, 0x11, 0x11},
                             .ip = {192, 168, 32, 124},
                             .sn = {255, 255, 255, 0},
                             .gw = {192, 168, 32, 1},
                             .dns = {8, 8, 8, 8},
                             .dhcp = NETINFO_DHCP };
+
+/*********************************************************
+* Intialize  the network information to be used in Wizchip
+**********************************************************/
 void W5500_Network_Init(void)
 {
         uint8_t tmpstr[6] = {0,};
@@ -58,23 +64,30 @@ void W5500_Network_Init(void)
 	wizchip_settimeout(&w_NetTimeout);
 }
 
-void my_ip_assign(void)
+/**********************************************
+* Call back for ip assing & ip update from DHCP
+***********************************************/
+static void my_ip_assign(void)
 {
-  getIPfromDHCP(gWIZNETINFO.ip);
-  getGWfromDHCP(gWIZNETINFO.gw);
-  getSNfromDHCP(gWIZNETINFO.sn);
-  getDNSfromDHCP(gWIZNETINFO.dns);
-  gWIZNETINFO.dhcp = NETINFO_DHCP;
-  
-  ctlnetwork(CN_SET_NETINFO, (void*)&gWIZNETINFO);
+        getIPfromDHCP(gWIZNETINFO.ip);
+        getGWfromDHCP(gWIZNETINFO.gw);
+        getSNfromDHCP(gWIZNETINFO.sn);
+        getDNSfromDHCP(gWIZNETINFO.dns);
+        gWIZNETINFO.dhcp = NETINFO_DHCP;
+        
+        ctlnetwork(CN_SET_NETINFO, (void*)&gWIZNETINFO);
 }
 
-void my_ip_conflict(void) 
+/************************************
+***** Call back for ip Conflict *****
+*************************************/
+static void my_ip_conflict(void) 
 {
-  printf("CONFLICT IP from DHCP \r\n");
-  while(1);
+        printf("CONFLICT IP from DHCP \r\n");
+        while(1);
 }
 
+/******************************  MAIN **********************************/
 
 int main(void)
 {
@@ -93,19 +106,30 @@ int main(void)
     {
       case DHCP_IP_ASSIGN:
       case DHCP_IP_CHANGED:
+        /* If this block empty, act with default_ip_assign & default_ip_update */
+        //
+        // This example calls my_ip_assign in the two case.
+        //
+        // Add to ...
+        //
         break;
       case DHCP_IP_LEASED:
         //Code cho chuong trinh thi viet vao day
+        
         ConnectToServer();
+        
         break;
       case DHCP_FAILED:
+        
         dhcp_ret++;
+        
         if (dhcp_ret > MAX_DHCP_RET)
         {
           dhcp_ret = 0;
-          DHCP_stop(); //if restart, recall DHCP_init()
-          W5500_Network_Init();
+          DHCP_stop();           //if restart, recall DHCP_init()
+          W5500_Network_Init();  //apply the default static network and print out netinfo to serial
         }
+        
         break;
       default:
         break;
