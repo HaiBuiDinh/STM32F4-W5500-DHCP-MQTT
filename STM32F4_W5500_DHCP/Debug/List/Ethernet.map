@@ -1,0 +1,774 @@
+###############################################################################
+#
+# IAR ELF Linker V8.32.1.169/W32 for ARM                  02/Apr/2019  16:38:02
+# Copyright 2007-2018 IAR Systems AB.
+#
+#    Output file  =  
+#        C:\Users\buidi\OneDrive\Desktop\Congty\PRJ5_3S\STM32F4-W5500-DHCP-MQTT\STM32F4_W5500_DHCP\Debug\Exe\Ethernet.out
+#    Map file     =  
+#        C:\Users\buidi\OneDrive\Desktop\Congty\PRJ5_3S\STM32F4-W5500-DHCP-MQTT\STM32F4_W5500_DHCP\Debug\List\Ethernet.map
+#    Command line =  
+#        -f C:\Users\buidi\AppData\Local\Temp\EW5F4A.tmp
+#        (C:\Users\buidi\OneDrive\Desktop\Congty\PRJ5_3S\STM32F4-W5500-DHCP-MQTT\STM32F4_W5500_DHCP\Debug\Obj\dhcp.o
+#        C:\Users\buidi\OneDrive\Desktop\Congty\PRJ5_3S\STM32F4-W5500-DHCP-MQTT\STM32F4_W5500_DHCP\Debug\Obj\main.o
+#        C:\Users\buidi\OneDrive\Desktop\Congty\PRJ5_3S\STM32F4-W5500-DHCP-MQTT\STM32F4_W5500_DHCP\Debug\Obj\misc.o
+#        C:\Users\buidi\OneDrive\Desktop\Congty\PRJ5_3S\STM32F4-W5500-DHCP-MQTT\STM32F4_W5500_DHCP\Debug\Obj\mqtt_func.o
+#        C:\Users\buidi\OneDrive\Desktop\Congty\PRJ5_3S\STM32F4-W5500-DHCP-MQTT\STM32F4_W5500_DHCP\Debug\Obj\mqtt_interface.o
+#        C:\Users\buidi\OneDrive\Desktop\Congty\PRJ5_3S\STM32F4-W5500-DHCP-MQTT\STM32F4_W5500_DHCP\Debug\Obj\MQTTClient.o
+#        C:\Users\buidi\OneDrive\Desktop\Congty\PRJ5_3S\STM32F4-W5500-DHCP-MQTT\STM32F4_W5500_DHCP\Debug\Obj\MQTTConnectClient.o
+#        C:\Users\buidi\OneDrive\Desktop\Congty\PRJ5_3S\STM32F4-W5500-DHCP-MQTT\STM32F4_W5500_DHCP\Debug\Obj\MQTTConnectServer.o
+#        C:\Users\buidi\OneDrive\Desktop\Congty\PRJ5_3S\STM32F4-W5500-DHCP-MQTT\STM32F4_W5500_DHCP\Debug\Obj\MQTTDeserializePublish.o
+#        C:\Users\buidi\OneDrive\Desktop\Congty\PRJ5_3S\STM32F4-W5500-DHCP-MQTT\STM32F4_W5500_DHCP\Debug\Obj\MQTTFormat.o
+#        C:\Users\buidi\OneDrive\Desktop\Congty\PRJ5_3S\STM32F4-W5500-DHCP-MQTT\STM32F4_W5500_DHCP\Debug\Obj\MQTTPacket.o
+#        C:\Users\buidi\OneDrive\Desktop\Congty\PRJ5_3S\STM32F4-W5500-DHCP-MQTT\STM32F4_W5500_DHCP\Debug\Obj\MQTTSerializePublish.o
+#        C:\Users\buidi\OneDrive\Desktop\Congty\PRJ5_3S\STM32F4-W5500-DHCP-MQTT\STM32F4_W5500_DHCP\Debug\Obj\MQTTSubscribeClient.o
+#        C:\Users\buidi\OneDrive\Desktop\Congty\PRJ5_3S\STM32F4-W5500-DHCP-MQTT\STM32F4_W5500_DHCP\Debug\Obj\MQTTSubscribeServer.o
+#        C:\Users\buidi\OneDrive\Desktop\Congty\PRJ5_3S\STM32F4-W5500-DHCP-MQTT\STM32F4_W5500_DHCP\Debug\Obj\MQTTUnsubscribeClient.o
+#        C:\Users\buidi\OneDrive\Desktop\Congty\PRJ5_3S\STM32F4-W5500-DHCP-MQTT\STM32F4_W5500_DHCP\Debug\Obj\MQTTUnsubscribeServer.o
+#        C:\Users\buidi\OneDrive\Desktop\Congty\PRJ5_3S\STM32F4-W5500-DHCP-MQTT\STM32F4_W5500_DHCP\Debug\Obj\socket.o
+#        C:\Users\buidi\OneDrive\Desktop\Congty\PRJ5_3S\STM32F4-W5500-DHCP-MQTT\STM32F4_W5500_DHCP\Debug\Obj\spi_cf.o
+#        C:\Users\buidi\OneDrive\Desktop\Congty\PRJ5_3S\STM32F4-W5500-DHCP-MQTT\STM32F4_W5500_DHCP\Debug\Obj\startup_stm32f4xx.o
+#        C:\Users\buidi\OneDrive\Desktop\Congty\PRJ5_3S\STM32F4-W5500-DHCP-MQTT\STM32F4_W5500_DHCP\Debug\Obj\stm32f4xx_exti.o
+#        C:\Users\buidi\OneDrive\Desktop\Congty\PRJ5_3S\STM32F4-W5500-DHCP-MQTT\STM32F4_W5500_DHCP\Debug\Obj\stm32f4xx_gpio.o
+#        C:\Users\buidi\OneDrive\Desktop\Congty\PRJ5_3S\STM32F4-W5500-DHCP-MQTT\STM32F4_W5500_DHCP\Debug\Obj\stm32f4xx_it.o
+#        C:\Users\buidi\OneDrive\Desktop\Congty\PRJ5_3S\STM32F4-W5500-DHCP-MQTT\STM32F4_W5500_DHCP\Debug\Obj\stm32f4xx_rcc.o
+#        C:\Users\buidi\OneDrive\Desktop\Congty\PRJ5_3S\STM32F4-W5500-DHCP-MQTT\STM32F4_W5500_DHCP\Debug\Obj\stm32f4xx_spi.o
+#        C:\Users\buidi\OneDrive\Desktop\Congty\PRJ5_3S\STM32F4-W5500-DHCP-MQTT\STM32F4_W5500_DHCP\Debug\Obj\stm32f4xx_syscfg.o
+#        C:\Users\buidi\OneDrive\Desktop\Congty\PRJ5_3S\STM32F4-W5500-DHCP-MQTT\STM32F4_W5500_DHCP\Debug\Obj\stm32f4xx_usart.o
+#        C:\Users\buidi\OneDrive\Desktop\Congty\PRJ5_3S\STM32F4-W5500-DHCP-MQTT\STM32F4_W5500_DHCP\Debug\Obj\system_stm32f4xx.o
+#        C:\Users\buidi\OneDrive\Desktop\Congty\PRJ5_3S\STM32F4-W5500-DHCP-MQTT\STM32F4_W5500_DHCP\Debug\Obj\w5500.o
+#        C:\Users\buidi\OneDrive\Desktop\Congty\PRJ5_3S\STM32F4-W5500-DHCP-MQTT\STM32F4_W5500_DHCP\Debug\Obj\wizchip_conf.o
+#        --no_out_extension -o
+#        C:\Users\buidi\OneDrive\Desktop\Congty\PRJ5_3S\STM32F4-W5500-DHCP-MQTT\STM32F4_W5500_DHCP\Debug\Exe\Ethernet.out
+#        --redirect _Printf=_PrintfFullNoMb --redirect _Scanf=_ScanfFullNoMb
+#        --map
+#        C:\Users\buidi\OneDrive\Desktop\Congty\PRJ5_3S\STM32F4-W5500-DHCP-MQTT\STM32F4_W5500_DHCP\Debug\List\Ethernet.map
+#        --config
+#        C:\Users\buidi\OneDrive\Desktop\Congty\PRJ5_3S\STM32F4-W5500-DHCP-MQTT\STM32F4_W5500_DHCP\Ethernet.icf
+#        --semihosting --entry __iar_program_start --vfe --text_out locale)
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+__dlib_version  = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The basic heap was selected because no calls to memory allocation
+functions were found in the application outside of system library
+functions, and there are calls to deallocation functions in the
+application.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at 0x800'0000 { ro section .intvec };
+"P1":  place in [from 0x800'0000 to 0x807'ffff] { ro };
+define block CSTACK with size = 8K, alignment = 8 { };
+"P3":  place in [from 0x1000'0000 to 0x1000'ffff] {
+          block CSTACK, section .ccram };
+define block HEAP with size = 8K, alignment = 8 { };
+"P4":  place in [from 0x2000'0000 to 0x2001'bfff] |
+                [from 0x2001'c000 to 0x2001'ffff] { rw, block HEAP };
+initialize by copy { rw };
+
+No sections matched the following patterns:
+
+  ro section application_specific_ro  in "P2"
+  section .backup_sram                in "P5"
+  section .ccram                      in "P3"
+
+
+  Section            Kind         Address    Size  Object
+  -------            ----         -------    ----  ------
+"A0":                                       0x188
+  .intvec            ro code   0x800'0000   0x188  startup_stm32f4xx.o [1]
+                             - 0x800'0188   0x188
+
+"P1":                                      0x600c
+  .text              ro code   0x800'0188   0xf30  dhcp.o [1]
+  .text              ro code   0x800'10b8   0x47c  w5500.o [1]
+  .text              ro code   0x800'1534   0xc74  socket.o [1]
+  .text              ro code   0x800'21a8   0xdf2  xprintffull_nomb.o [2]
+  .text              ro code   0x800'2f9a    0x3a  zero_init3.o [4]
+  .text              ro code   0x800'2fd4    0x16  strchr.o [4]
+  .text              ro code   0x800'2fea     0xa  xsprout.o [2]
+  .text              ro code   0x800'2ff4    0x40  xfail_s.o [2]
+  .text              ro code   0x800'3034    0x36  strlen.o [4]
+  .rodata            const     0x800'306a     0x2  mqtt_func.o [1]
+  .text              ro code   0x800'306c    0x58  memchr.o [4]
+  .text              ro code   0x800'30c4   0x230  I64DivMod.o [4]
+  .text              ro code   0x800'32f4   0x1a2  DblMul.o [3]
+  .text              ro code   0x800'3498    0xa6  ABImemcpy.o [4]
+  .text              ro code   0x800'3540    0x70  frexp.o [3]
+  .text              ro code   0x800'35b0    0x2e  DblCmpLe.o [3]
+  .text              ro code   0x800'35e0    0x2e  DblCmpGe.o [3]
+  .text              ro code   0x800'3610   0x13a  ldexp.o [3]
+  .text              ro code   0x800'374c    0x3a  DblToS32.o [3]
+  .text              ro code   0x800'3788    0x22  S32ToDbl.o [3]
+  .text              ro code   0x800'37ac    0xe2  DblSub.o [3]
+  .text              ro code   0x800'3890   0x246  DblDiv.o [3]
+  .text              ro code   0x800'3ad8    0x28  DblToU32.o [3]
+  .text              ro code   0x800'3b00    0x1a  U32ToDbl.o [3]
+  .text              ro code   0x800'3b1a     0x6  abort.o [2]
+  .text              ro code   0x800'3b20     0x2  I64DivZer.o [4]
+  .text              ro code   0x800'3b24   0x16a  DblAdd.o [3]
+  .text              ro code   0x800'3c90    0x14  exit.o [5]
+  .text              ro code   0x800'3ca4    0x80  iarttio.o [5]
+  .text              ro code   0x800'3d24    0x3c  XShttio.o [2]
+  .text              ro code   0x800'3d60   0x6ca  wizchip_conf.o [1]
+  .text              ro code   0x800'442c   0x688  MQTTClient.o [1]
+  .text              ro code   0x800'4ab4   0x122  mqtt_interface.o [1]
+  .text              ro code   0x800'4bd8   0x228  MQTTPacket.o [1]
+  .text              ro code   0x800'4e00   0x2c8  MQTTConnectClient.o [1]
+  .text              ro code   0x800'50c8   0x10c  MQTTDeserializePublish.o [1]
+  .text              ro code   0x800'51d4   0x130  MQTTSerializePublish.o [1]
+  .text              ro code   0x800'5304    0x28  strncmp.o [2]
+  .text              ro code   0x800'532c   0x1cc  spi_cf.o [1]
+  .text              ro code   0x800'54f8    0x80  stm32f4xx_rcc.o [1]
+  .text              ro code   0x800'5578   0x104  stm32f4xx_gpio.o [1]
+  .text              ro code   0x800'567c    0xd6  stm32f4xx_spi.o [1]
+  .text              ro code   0x800'5754    0x28  printf.o [2]
+  .text              ro code   0x800'577c   0x174  main.o [1]
+  .text              ro code   0x800'58f0   0x12c  mqtt_func.o [1]
+  .text              ro code   0x800'5a1c    0x40  sprintf.o [2]
+  .text              ro code   0x800'5a5c   0x124  system_stm32f4xx.o [1]
+  .rodata            const     0x800'5b80    0x58  mqtt_func.o [1]
+  .rodata            const     0x800'5bd8    0x58  MQTTClient.o [1]
+  .text              ro code   0x800'5c30    0x2c  copy_init3.o [4]
+  .text              ro code   0x800'5c5c    0x28  data_init.o [4]
+  .rodata            const     0x800'5c84    0x24  main.o [1]
+  .rodata            const     0x800'5ca8    0x24  main.o [1]
+  .rodata            const     0x800'5ccc    0x24  mqtt_func.o [1]
+  .text              ro code   0x800'5cf0    0x22  fpinit_M.o [3]
+  .text              ro code   0x800'5d12    0x22  iarwrite.o [5]
+  .iar.init_table    const     0x800'5d34    0x24  - Linker created -
+  .text              ro code   0x800'5d58    0x20  putchar.o [2]
+  .text              ro code   0x800'5d78    0x10  write.o [5]
+  .text              ro code   0x800'5d88    0x1e  dwrite.o [5]
+  .text              ro code   0x800'5da6    0x20  iarwstd.o [5]
+  .text              ro code   0x800'5dc8    0x1e  cmain.o [4]
+  .text              ro code   0x800'5de6     0x4  low_level_init.o [2]
+  .text              ro code   0x800'5dea     0x4  exit.o [2]
+  .text              ro code   0x800'5df0     0xa  cexit.o [4]
+  .rodata            const     0x800'5dfc    0x1c  main.o [1]
+  .rodata            const     0x800'5e18    0x1c  mqtt_func.o [1]
+  .rodata            const     0x800'5e34    0x1c  spi_cf.o [1]
+  .rodata            const     0x800'5e50    0x18  main.o [1]
+  .text              ro code   0x800'5e68    0x16  xprout.o [2]
+  .rodata            const     0x800'5e80    0x14  dhcp.o [1]
+  .rodata            const     0x800'5e94    0x14  main.o [1]
+  .rodata            const     0x800'5ea8    0x14  main.o [1]
+  .rodata            const     0x800'5ebc    0x14  main.o [1]
+  .text              ro code   0x800'5ed0    0x12  stm32f4xx_it.o [1]
+  .rodata            const     0x800'5ee4    0x10  mqtt_func.o [1]
+  .rodata            const     0x800'5ef4    0x10  mqtt_func.o [1]
+  .rodata            const     0x800'5f04    0x10  spi_cf.o [1]
+  .text              ro code   0x800'5f14    0x10  startup_stm32f4xx.o [1]
+  .rodata            const     0x800'5f24     0xc  mqtt_func.o [1]
+  .rodata            const     0x800'5f30     0xc  mqtt_func.o [1]
+  .rodata            const     0x800'5f3c     0xc  mqtt_func.o [1]
+  .text              ro code   0x800'5f48     0xc  cstartup_M.o [4]
+  .rodata            const     0x800'5f54     0x8  mqtt_func.o [1]
+  .rodata            const     0x800'5f5c     0x8  MQTTConnectClient.o [1]
+  .rodata            const     0x800'5f64     0x8  MQTTConnectClient.o [1]
+  .rodata            const     0x800'5f6c     0x4  MQTTClient.o [1]
+  .rodata            const     0x800'5f70     0x4  MQTTConnectClient.o [1]
+  .rodata            const     0x800'5f74     0x4  MQTTConnectClient.o [1]
+  .rodata            const     0x800'5f78     0x4  MQTTConnectClient.o [1]
+  .rodata            const     0x800'5f7c     0x4  MQTTConnectClient.o [1]
+  .rodata            const     0x800'5f80     0x4  MQTTConnectClient.o [1]
+  .rodata            const     0x800'5f84     0x4  MQTTDeserializePublish.o [1]
+  .rodata            const     0x800'5f88     0x4  MQTTDeserializePublish.o [1]
+  .rodata            const     0x800'5f8c     0x4  MQTTSerializePublish.o [1]
+  .rodata            const     0x800'5f90     0x4  MQTTSerializePublish.o [1]
+  .text              ro code   0x800'5f94     0x4  startup_stm32f4xx.o [1]
+  .text              ro code   0x800'5f98     0x4  startup_stm32f4xx.o [1]
+  .text              ro code   0x800'5f9c     0x4  startup_stm32f4xx.o [1]
+  .text              ro code   0x800'5fa0     0x4  startup_stm32f4xx.o [1]
+  .text              ro code   0x800'5fa4     0x4  startup_stm32f4xx.o [1]
+  .text              ro code   0x800'5fa8     0x4  startup_stm32f4xx.o [1]
+  .text              ro code   0x800'5fac     0x4  startup_stm32f4xx.o [1]
+  .text              ro code   0x800'5fb0     0x4  startup_stm32f4xx.o [1]
+  .text              ro code   0x800'5fb4     0x4  startup_stm32f4xx.o [1]
+  .text              ro code   0x800'5fb8     0x4  startup_stm32f4xx.o [1]
+  .text              ro code   0x800'5fbc     0x4  startup_stm32f4xx.o [1]
+  .text              ro code   0x800'5fc0     0x4  startup_stm32f4xx.o [1]
+  .text              ro code   0x800'5fc4     0x4  startup_stm32f4xx.o [1]
+  .text              ro code   0x800'5fc8     0x4  startup_stm32f4xx.o [1]
+  .text              ro code   0x800'5fcc     0x4  startup_stm32f4xx.o [1]
+  .text              ro code   0x800'5fd0     0x4  startup_stm32f4xx.o [1]
+  .text              ro code   0x800'5fd4     0x4  startup_stm32f4xx.o [1]
+  .text              ro code   0x800'5fd8     0x4  startup_stm32f4xx.o [1]
+  .text              ro code   0x800'5fdc     0x4  startup_stm32f4xx.o [1]
+  .text              ro code   0x800'5fe0     0x4  startup_stm32f4xx.o [1]
+  .text              ro code   0x800'5fe4     0x4  startup_stm32f4xx.o [1]
+  .text              ro code   0x800'5fe8     0x4  startup_stm32f4xx.o [1]
+  .text              ro code   0x800'5fec     0x4  startup_stm32f4xx.o [1]
+  .text              ro code   0x800'5ff0     0x4  startup_stm32f4xx.o [1]
+  .text              ro code   0x800'5ff4     0x4  startup_stm32f4xx.o [1]
+  .text              ro code   0x800'5ff8     0x4  startup_stm32f4xx.o [1]
+  .text              ro code   0x800'5ffc     0x4  startup_stm32f4xx.o [1]
+  .text              ro code   0x800'6000     0x4  startup_stm32f4xx.o [1]
+  .text              ro code   0x800'6004     0x4  startup_stm32f4xx.o [1]
+  .text              ro code   0x800'6008     0x4  startup_stm32f4xx.o [1]
+  .text              ro code   0x800'600c     0x4  startup_stm32f4xx.o [1]
+  .text              ro code   0x800'6010     0x4  startup_stm32f4xx.o [1]
+  .text              ro code   0x800'6014     0x4  startup_stm32f4xx.o [1]
+  .text              ro code   0x800'6018     0x4  startup_stm32f4xx.o [1]
+  .text              ro code   0x800'601c     0x4  startup_stm32f4xx.o [1]
+  .text              ro code   0x800'6020     0x4  startup_stm32f4xx.o [1]
+  .text              ro code   0x800'6024     0x4  startup_stm32f4xx.o [1]
+  .text              ro code   0x800'6028     0x4  startup_stm32f4xx.o [1]
+  .text              ro code   0x800'602c     0x4  startup_stm32f4xx.o [1]
+  .text              ro code   0x800'6030     0x4  startup_stm32f4xx.o [1]
+  .text              ro code   0x800'6034     0x4  startup_stm32f4xx.o [1]
+  .text              ro code   0x800'6038     0x4  startup_stm32f4xx.o [1]
+  .text              ro code   0x800'603c     0x4  startup_stm32f4xx.o [1]
+  .text              ro code   0x800'6040     0x4  startup_stm32f4xx.o [1]
+  .text              ro code   0x800'6044     0x4  startup_stm32f4xx.o [1]
+  .text              ro code   0x800'6048     0x4  startup_stm32f4xx.o [1]
+  .text              ro code   0x800'604c     0x4  startup_stm32f4xx.o [1]
+  .text              ro code   0x800'6050     0x4  startup_stm32f4xx.o [1]
+  .text              ro code   0x800'6054     0x4  startup_stm32f4xx.o [1]
+  .text              ro code   0x800'6058     0x4  startup_stm32f4xx.o [1]
+  .text              ro code   0x800'605c     0x4  startup_stm32f4xx.o [1]
+  .text              ro code   0x800'6060     0x4  startup_stm32f4xx.o [1]
+  .text              ro code   0x800'6064     0x4  startup_stm32f4xx.o [1]
+  .text              ro code   0x800'6068     0x4  startup_stm32f4xx.o [1]
+  .text              ro code   0x800'606c     0x4  startup_stm32f4xx.o [1]
+  .text              ro code   0x800'6070     0x4  startup_stm32f4xx.o [1]
+  .text              ro code   0x800'6074     0x4  startup_stm32f4xx.o [1]
+  .text              ro code   0x800'6078     0x4  startup_stm32f4xx.o [1]
+  .text              ro code   0x800'607c     0x4  startup_stm32f4xx.o [1]
+  .text              ro code   0x800'6080     0x4  startup_stm32f4xx.o [1]
+  .text              ro code   0x800'6084     0x4  startup_stm32f4xx.o [1]
+  .text              ro code   0x800'6088     0x4  startup_stm32f4xx.o [1]
+  .text              ro code   0x800'608c     0x4  startup_stm32f4xx.o [1]
+  .text              ro code   0x800'6090     0x4  startup_stm32f4xx.o [1]
+  .text              ro code   0x800'6094     0x4  startup_stm32f4xx.o [1]
+  .text              ro code   0x800'6098     0x4  startup_stm32f4xx.o [1]
+  .text              ro code   0x800'609c     0x4  startup_stm32f4xx.o [1]
+  .text              ro code   0x800'60a0     0x4  startup_stm32f4xx.o [1]
+  .text              ro code   0x800'60a4     0x4  startup_stm32f4xx.o [1]
+  .text              ro code   0x800'60a8     0x4  startup_stm32f4xx.o [1]
+  .text              ro code   0x800'60ac     0x4  startup_stm32f4xx.o [1]
+  .text              ro code   0x800'60b0     0x4  startup_stm32f4xx.o [1]
+  .text              ro code   0x800'60b4     0x4  startup_stm32f4xx.o [1]
+  .text              ro code   0x800'60b8     0x4  startup_stm32f4xx.o [1]
+  .text              ro code   0x800'60bc     0x4  startup_stm32f4xx.o [1]
+  .text              ro code   0x800'60c0     0x4  startup_stm32f4xx.o [1]
+  .text              ro code   0x800'60c4     0x4  startup_stm32f4xx.o [1]
+  .text              ro code   0x800'60c8     0x4  startup_stm32f4xx.o [1]
+  .text              ro code   0x800'60cc     0x4  startup_stm32f4xx.o [1]
+  .text              ro code   0x800'60d0     0x4  startup_stm32f4xx.o [1]
+  .text              ro code   0x800'60d4     0x4  startup_stm32f4xx.o [1]
+  .text              ro code   0x800'60d8     0x4  startup_stm32f4xx.o [1]
+  .text              ro code   0x800'60dc     0x4  startup_stm32f4xx.o [1]
+  .text              ro code   0x800'60e0     0x4  startup_stm32f4xx.o [1]
+  .text              ro code   0x800'60e4     0x4  startup_stm32f4xx.o [1]
+  .text              ro code   0x800'60e8     0x4  startup_stm32f4xx.o [1]
+  .text              ro code   0x800'60ec     0x4  startup_stm32f4xx.o [1]
+  .text              ro code   0x800'60f0     0x4  startup_stm32f4xx.o [1]
+  .text              ro code   0x800'60f4     0x4  startup_stm32f4xx.o [1]
+  .text              ro code   0x800'60f8     0x4  startup_stm32f4xx.o [1]
+  .text              ro code   0x800'60fc     0x4  startup_stm32f4xx.o [1]
+  .rodata            const     0x800'6100     0x0  zero_init3.o [4]
+  .rodata            const     0x800'6100     0x0  copy_init3.o [4]
+  Initializer bytes  const     0x800'6100    0x94  <for P4 s0>
+                             - 0x800'6194  0x600c
+
+"P3":                                      0x2000
+  CSTACK                      0x1000'0000  0x2000  <Block>
+    CSTACK           uninit   0x1000'0000  0x2000  <Block tail>
+                            - 0x1000'2000  0x2000
+
+"P4", part 1 of 2:                           0x94
+  P4 s0                       0x2000'0000    0x94  <Init block>
+    .data            inited   0x2000'0000    0x28  wizchip_conf.o [1]
+    .data            inited   0x2000'0028    0x24  mqtt_func.o [1]
+    .data            inited   0x2000'004c    0x18  main.o [1]
+    .data            inited   0x2000'0064     0x8  dhcp.o [1]
+    .data            inited   0x2000'006c     0x8  XShttio.o [2]
+    .data            inited   0x2000'0074     0x4  dhcp.o [1]
+    .data            inited   0x2000'0078     0x4  dhcp.o [1]
+    .data            inited   0x2000'007c     0x4  dhcp.o [1]
+    .data            inited   0x2000'0080     0x4  dhcp.o [1]
+    .data            inited   0x2000'0084     0x4  dhcp.o [1]
+    .data            inited   0x2000'0088     0x4  mqtt_func.o [1]
+    .data            inited   0x2000'008c     0x4  mqtt_func.o [1]
+    .data            inited   0x2000'0090     0x2  socket.o [1]
+                            - 0x2000'0094    0x94
+
+"P4", part 2 of 2:                         0x1064
+  .bss               zero     0x2000'0094   0x800  main.o [1]
+  .bss               zero     0x2000'0894   0x800  mqtt_func.o [1]
+  .bss               zero     0x2000'1094    0x10  socket.o [1]
+  .bss               zero     0x2000'10a4     0x8  dhcp.o [1]
+  .bss               zero     0x2000'10ac     0x8  socket.o [1]
+  .bss               zero     0x2000'10b4     0x4  dhcp.o [1]
+  .bss               zero     0x2000'10b8     0x4  dhcp.o [1]
+  .bss               zero     0x2000'10bc     0x4  dhcp.o [1]
+  .bss               zero     0x2000'10c0     0x4  dhcp.o [1]
+  .bss               zero     0x2000'10c4     0x4  dhcp.o [1]
+  .bss               zero     0x2000'10c8     0x4  dhcp.o [1]
+  .bss               zero     0x2000'10cc     0x4  dhcp.o [1]
+  .bss               zero     0x2000'10d0     0x4  dhcp.o [1]
+  .bss               zero     0x2000'10d4     0x4  dhcp.o [1]
+  .bss               zero     0x2000'10d8     0x4  mqtt_func.o [1]
+  .bss               zero     0x2000'10dc     0x4  mqtt_interface.o [1]
+  .bss               zero     0x2000'10e0     0x4  MQTTPacket.o [1]
+  .bss               zero     0x2000'10e4     0x4  wizchip_conf.o [1]
+  .bss               zero     0x2000'10e8     0x4  xfail_s.o [2]
+  .bss               zero     0x2000'10ec     0x2  socket.o [1]
+  .bss               zero     0x2000'10ee     0x2  socket.o [1]
+  .bss               zero     0x2000'10f0     0x1  dhcp.o [1]
+  .bss               zero     0x2000'10f1     0x1  dhcp.o [1]
+  .bss               zero     0x2000'10f2     0x1  dhcp.o [1]
+  .bss               zero     0x2000'10f3     0x1  main.o [1]
+  .bss               zero     0x2000'10f4     0x1  wizchip_conf.o [1]
+  .bss               zero     0x2000'10f5     0x1  XShttio.o [2]
+                            - 0x2000'10f6  0x1062
+
+Unused ranges:
+
+         From           To      Size
+         ----           --      ----
+   0x800'6194   0x807'ffff  0x7'9e6c
+  0x1000'2000  0x1000'ffff    0xe000
+  0x2000'10f8  0x2001'bfff  0x1'af08
+  0x2001'c000  0x2001'ffff    0x4000
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address      Size
+          -------      ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x1062:
+          0x2000'0094  0x1062
+
+Copy (__iar_copy_init3)
+    1 source range, total size 0x94 (101% of destination):
+           0x800'6100    0x94
+    1 destination range, total size 0x92:
+          0x2000'0000    0x92
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                    ro code  ro data  rw data
+    ------                    -------  -------  -------
+command line/config:
+    ---------------------------------------------------
+    Total:
+
+C:\Users\buidi\OneDrive\Desktop\Congty\PRJ5_3S\STM32F4-W5500-DHCP-MQTT\STM32F4_W5500_DHCP\Debug\Obj: [1]
+    MQTTClient.o                1 672       92
+    MQTTConnectClient.o           712       36
+    MQTTDeserializePublish.o      268        8
+    MQTTPacket.o                  552                 4
+    MQTTSerializePublish.o        304        8
+    dhcp.o                      3 888       48       75
+    main.o                        372      208    2 073
+    mqtt_func.o                   300      274    2 096
+    mqtt_interface.o              290                 4
+    socket.o                    3 188        2       30
+    spi_cf.o                      460       44
+    startup_stm32f4xx.o           772
+    stm32f4xx_gpio.o              260
+    stm32f4xx_it.o                 18
+    stm32f4xx_rcc.o               128
+    stm32f4xx_spi.o               214
+    system_stm32f4xx.o            292
+    w5500.o                     1 148
+    wizchip_conf.o              1 738       40       45
+    ---------------------------------------------------
+    Total:                     16 576      760    4 327
+
+dl7M_tln.a: [2]
+    XShttio.o                      60        8        9
+    abort.o                         6
+    exit.o                          4
+    low_level_init.o                4
+    printf.o                       40
+    putchar.o                      32
+    sprintf.o                      64
+    strncmp.o                      40
+    xfail_s.o                      64                 4
+    xprintffull_nomb.o          3 570
+    xprout.o                       22
+    xsprout.o                      10
+    ---------------------------------------------------
+    Total:                      3 916        8       13
+
+m7M_tls.a: [3]
+    DblAdd.o                      362
+    DblCmpGe.o                     46
+    DblCmpLe.o                     46
+    DblDiv.o                      582
+    DblMul.o                      418
+    DblSub.o                      226
+    DblToS32.o                     58
+    DblToU32.o                     40
+    S32ToDbl.o                     34
+    U32ToDbl.o                     26
+    fpinit_M.o                     34
+    frexp.o                       112
+    ldexp.o                       314
+    ---------------------------------------------------
+    Total:                      2 298
+
+rt7M_tl.a: [4]
+    ABImemcpy.o                   166
+    I64DivMod.o                   560
+    I64DivZer.o                     2
+    cexit.o                        10
+    cmain.o                        30
+    copy_init3.o                   44
+    cstartup_M.o                   12
+    data_init.o                    40
+    memchr.o                       88
+    strchr.o                       22
+    strlen.o                       54
+    zero_init3.o                   58
+    ---------------------------------------------------
+    Total:                      1 086
+
+shb_l.a: [5]
+    dwrite.o                       30
+    exit.o                         20
+    iarttio.o                     128
+    iarwrite.o                     34
+    iarwstd.o                      32
+    write.o                        16
+    ---------------------------------------------------
+    Total:                        260
+
+    Gaps                           32        6
+    Linker created                          38    8 192
+-------------------------------------------------------
+    Grand Total:               24 168      812   12 532
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                       Address   Size  Type      Object
+-----                       -------   ----  ----      ------
+.iar.init_table$$Base    0x800'5d34          --   Gb  - Linker created -
+.iar.init_table$$Limit   0x800'5d58          --   Gb  - Linker created -
+?main                    0x800'5dc9         Code  Gb  cmain.o [4]
+BusFault_Handler         0x800'5ed7    0x2  Code  Gb  stm32f4xx_it.o [1]
+CSTACK$$Base            0x1000'0000          --   Gb  - Linker created -
+CSTACK$$Limit           0x1000'2000          --   Gb  - Linker created -
+ConnectNetwork           0x800'4b8d   0x4a  Code  Gb  mqtt_interface.o [1]
+ConnectToServer          0x800'58f1   0xfe  Code  Gb  mqtt_func.o [1]
+DHCP_CHADDR             0x2000'10a4    0x8  Data  Gb  dhcp.o [1]
+DHCP_SIP                0x2000'10b4    0x4  Data  Gb  dhcp.o [1]
+DHCP_SOCKET             0x2000'10f0    0x1  Data  Gb  dhcp.o [1]
+DHCP_XID                0x2000'10d0    0x4  Data  Gb  dhcp.o [1]
+DHCP_allocated_dns      0x2000'10c8    0x4  Data  Gb  dhcp.o [1]
+DHCP_allocated_gw       0x2000'10c0    0x4  Data  Gb  dhcp.o [1]
+DHCP_allocated_ip       0x2000'10bc    0x4  Data  Gb  dhcp.o [1]
+DHCP_allocated_sn       0x2000'10c4    0x4  Data  Gb  dhcp.o [1]
+DHCP_init                0x800'0f75   0x96  Code  Gb  dhcp.o [1]
+DHCP_run                 0x800'0cc5  0x190  Code  Gb  dhcp.o [1]
+DHCP_stop                0x800'0e55   0x12  Code  Gb  dhcp.o [1]
+DebugMon_Handler         0x800'5edd    0x2  Code  Gb  stm32f4xx_it.o [1]
+GPIO_Init                0x800'5579   0xa8  Code  Gb  stm32f4xx_gpio.o [1]
+GPIO_PinAFConfig         0x800'5629   0x54  Code  Gb  stm32f4xx_gpio.o [1]
+GPIO_ResetBits           0x800'5625    0x4  Code  Gb  stm32f4xx_gpio.o [1]
+GPIO_SetBits             0x800'5621    0x4  Code  Gb  stm32f4xx_gpio.o [1]
+HOST_NAME               0x2000'0064    0x8  Data  Gb  dhcp.o [1]
+HardFault_Handler        0x800'5ed3    0x2  Code  Gb  stm32f4xx_it.o [1]
+LoadInt                  0x800'2357   0x7a  Code  Lc  xprintffull_nomb.o [2]
+MQTTClientInit           0x800'44ad   0x3e  Code  Gb  MQTTClient.o [1]
+MQTTConnect              0x800'48d7   0xa6  Code  Gb  MQTTClient.o [1]
+MQTTDeserialize_ack      0x800'516f   0x5c  Code  Gb  MQTTDeserializePublish.o [1]
+MQTTDeserialize_connack
+                         0x800'4fe3   0x6c  Code  Gb  MQTTConnectClient.o [1]
+MQTTDeserialize_publish
+                         0x800'50c9   0xa6  Code  Gb  MQTTDeserializePublish.o [1]
+MQTTDisconnect           0x800'4a7d   0x38  Code  Gb  MQTTClient.o [1]
+MQTTPacket_decode        0x800'4c03   0x48  Code  Gb  MQTTPacket.o [1]
+MQTTPacket_decodeBuf     0x800'4c8d    0xe  Code  Gb  MQTTPacket.o [1]
+MQTTPacket_encode        0x800'4bd9   0x2a  Code  Gb  MQTTPacket.o [1]
+MQTTPacket_equals        0x800'4db3   0x40  Code  Gb  MQTTPacket.o [1]
+MQTTPacket_len           0x800'4c4b   0x22  Code  Gb  MQTTPacket.o [1]
+MQTTPublish              0x800'4989   0xf4  Code  Gb  MQTTClient.o [1]
+MQTTSerialize_ack        0x800'5299   0x62  Code  Gb  MQTTSerializePublish.o [1]
+MQTTSerialize_connect    0x800'4e81  0x162  Code  Gb  MQTTConnectClient.o [1]
+MQTTSerialize_connectLength
+                         0x800'4e01   0x80  Code  Gb  MQTTConnectClient.o [1]
+MQTTSerialize_disconnect
+                         0x800'50b5    0xa  Code  Gb  MQTTConnectClient.o [1]
+MQTTSerialize_pingreq    0x800'50bf    0xa  Code  Gb  MQTTConnectClient.o [1]
+MQTTSerialize_publish    0x800'51f7   0xa2  Code  Gb  MQTTSerializePublish.o [1]
+MQTTSerialize_publishLength
+                         0x800'51d5   0x22  Code  Gb  MQTTSerializePublish.o [1]
+MQTTSerialize_zero       0x800'504f   0x4a  Code  Gb  MQTTConnectClient.o [1]
+MQTTYield                0x800'4875   0x38  Code  Gb  MQTTClient.o [1]
+MQTTstrlen               0x800'4d9f   0x14  Code  Gb  MQTTPacket.o [1]
+MemManage_Handler        0x800'5ed5    0x2  Code  Gb  stm32f4xx_it.o [1]
+MilliTimer              0x2000'10dc    0x4  Data  Gb  mqtt_interface.o [1]
+NMI_Handler              0x800'5ed1    0x2  Code  Gb  stm32f4xx_it.o [1]
+NewMessageData           0x800'442d    0x6  Code  Lc  MQTTClient.o [1]
+NewNetwork               0x800'4b05   0x16  Code  Gb  mqtt_interface.o [1]
+OLD_allocated_ip        0x2000'10b8    0x4  Data  Gb  dhcp.o [1]
+PendSV_Handler           0x800'5edf    0x2  Code  Gb  stm32f4xx_it.o [1]
+RCC_AHB1PeriphClockCmd   0x800'54f9   0x1c  Code  Gb  stm32f4xx_rcc.o [1]
+RCC_APB1PeriphResetCmd   0x800'5531   0x1c  Code  Gb  stm32f4xx_rcc.o [1]
+RCC_APB2PeriphClockCmd   0x800'5515   0x1c  Code  Gb  stm32f4xx_rcc.o [1]
+RCC_APB2PeriphResetCmd   0x800'554d   0x1c  Code  Gb  stm32f4xx_rcc.o [1]
+Region$$Table$$Base      0x800'5d34          --   Gb  - Linker created -
+Region$$Table$$Limit     0x800'5d58          --   Gb  - Linker created -
+SPI_Cmd                  0x800'571d   0x1c  Code  Gb  stm32f4xx_spi.o [1]
+SPI_I2S_DeInit           0x800'567d   0x56  Code  Gb  stm32f4xx_spi.o [1]
+SPI_I2S_GetFlagStatus    0x800'5741   0x12  Code  Gb  stm32f4xx_spi.o [1]
+SPI_I2S_ReceiveData      0x800'5739    0x4  Code  Gb  stm32f4xx_spi.o [1]
+SPI_I2S_SendData         0x800'573d    0x4  Code  Gb  stm32f4xx_spi.o [1]
+SPI_Init                 0x800'56d3   0x3e  Code  Gb  stm32f4xx_spi.o [1]
+SVC_Handler              0x800'5edb    0x2  Code  Gb  stm32f4xx_it.o [1]
+SetSysClock              0x800'5aa3   0xaa  Code  Lc  system_stm32f4xx.o [1]
+SysTick_Handler          0x800'5ee1    0x2  Code  Gb  stm32f4xx_it.o [1]
+SystemInit               0x800'5a5d   0x46  Code  Gb  system_stm32f4xx.o [1]
+TimerCountdown           0x800'4adb   0x10  Code  Gb  mqtt_interface.o [1]
+TimerCountdownMS         0x800'4ad1    0xa  Code  Gb  mqtt_interface.o [1]
+TimerInit                0x800'4ab5    0x6  Code  Gb  mqtt_interface.o [1]
+TimerIsExpired           0x800'4abb   0x16  Code  Gb  mqtt_interface.o [1]
+TimerLeftMS              0x800'4aeb   0x12  Code  Gb  mqtt_interface.o [1]
+UsageFault_Handler       0x800'5ed9    0x2  Code  Gb  stm32f4xx_it.o [1]
+W5500_CS_Deselect        0x800'5417    0xc  Code  Lc  spi_cf.o [1]
+W5500_CS_Select          0x800'540b    0xc  Code  Lc  spi_cf.o [1]
+W5500_Init               0x800'54a9   0x30  Code  Gb  spi_cf.o [1]
+W5500_Mem_Init           0x800'5483   0x26  Code  Lc  spi_cf.o [1]
+W5500_Network_Init       0x800'577d   0xb0  Code  Gb  main.o [1]
+W5500_ReadByte           0x800'5455   0x2e  Code  Lc  spi_cf.o [1]
+W5500_SPI_Init           0x800'532d   0xde  Code  Lc  spi_cf.o [1]
+W5500_WriteByte          0x800'5423   0x32  Code  Lc  spi_cf.o [1]
+WIZCHIP                 0x2000'0000   0x28  Data  Gb  wizchip_conf.o [1]
+WIZCHIP_READ             0x800'10b9   0x68  Code  Gb  w5500.o [1]
+WIZCHIP_READ_BUF         0x800'118b   0x86  Code  Gb  w5500.o [1]
+WIZCHIP_WRITE            0x800'1121   0x6a  Code  Gb  w5500.o [1]
+WIZCHIP_WRITE_BUF        0x800'1211   0x84  Code  Gb  w5500.o [1]
+_DHCP_                  0x2000'10f4    0x1  Data  Lc  wizchip_conf.o [1]
+_DNS_                   0x2000'10e4    0x4  Data  Lc  wizchip_conf.o [1]
+_GenldFullNoMb           0x800'2c99  0x274  Code  Lc  xprintffull_nomb.o [2]
+_LdtobFullNoMb           0x800'2895  0x3d6  Code  Lc  xprintffull_nomb.o [2]
+_LitobFullNoMb           0x800'2745  0x10a  Code  Lc  xprintffull_nomb.o [2]
+_PrintfFullNoMb          0x800'21a9  0x19e  Code  Gb  xprintffull_nomb.o [2]
+_Prout                   0x800'5e69   0x16  Code  Gb  xprout.o [2]
+_PutcharsFullNoMb        0x800'2f0d   0x2e  Code  Lc  xprintffull_nomb.o [2]
+_PutfldFullNoMb          0x800'23d1  0x268  Code  Lc  xprintffull_nomb.o [2]
+_PuttxtFullNoMb          0x800'2639  0x10c  Code  Lc  xprintffull_nomb.o [2]
+_SProut                  0x800'2feb    0xa  Code  Gb  xsprout.o [2]
+__aeabi_cdcmple          0x800'35b1         Code  Gb  DblCmpLe.o [3]
+__aeabi_cdrcmple         0x800'35e1         Code  Gb  DblCmpGe.o [3]
+__aeabi_d2iz             0x800'374d         Code  Gb  DblToS32.o [3]
+__aeabi_d2uiz            0x800'3ad9         Code  Gb  DblToU32.o [3]
+__aeabi_ddiv             0x800'3891         Code  Gb  DblDiv.o [3]
+__aeabi_dmul             0x800'32f5         Code  Gb  DblMul.o [3]
+__aeabi_dsub             0x800'37ad         Code  Gb  DblSub.o [3]
+__aeabi_i2d              0x800'3789         Code  Gb  S32ToDbl.o [3]
+__aeabi_ldiv0            0x800'3b21         Code  Gb  I64DivZer.o [4]
+__aeabi_memcpy           0x800'3499         Code  Gb  ABImemcpy.o [4]
+__aeabi_memcpy4          0x800'34b9         Code  Gb  ABImemcpy.o [4]
+__aeabi_memcpy8          0x800'34b9         Code  Gb  ABImemcpy.o [4]
+__aeabi_ui2d             0x800'3b01         Code  Gb  U32ToDbl.o [3]
+__aeabi_uldivmod         0x800'30c5         Code  Gb  I64DivMod.o [4]
+__cmain                  0x800'5dc9         Code  Gb  cmain.o [4]
+__dwrite                 0x800'5d89   0x1e  Code  Gb  dwrite.o [5]
+__exit                   0x800'3c91   0x14  Code  Gb  exit.o [5]
+__iar_Fail_s             0x800'2ff5   0x1c  Code  Gb  xfail_s.o [2]
+__iar_Memchr             0x800'306d         Code  Gb  memchr.o [4]
+__iar_Strchr             0x800'2fd5         Code  Gb  strchr.o [4]
+__iar_close_ttio         0x800'3ca5   0x2e  Code  Gb  iarttio.o [5]
+__iar_copy_init3         0x800'5c31   0x2c  Code  Gb  copy_init3.o [4]
+__iar_dadd               0x800'37bd         Code  Gb  DblSub.o [3]
+__iar_data_init3         0x800'5c5d   0x28  Code  Gb  data_init.o [4]
+__iar_dsub               0x800'3b25         Code  Gb  DblAdd.o [3]
+__iar_dsubStart          0x800'3b37         Code  Gb  DblAdd.o [3]
+__iar_frexp              0x800'354d         Code  Gb  frexp.o [3]
+__iar_frexpl             0x800'354d         Code  Gb  frexp.o [3]
+__iar_get_ttio           0x800'3cd5   0x4c  Code  Gb  iarttio.o [5]
+__iar_init_vfp           0x800'5cf1         Code  Gb  fpinit_M.o [3]
+__iar_ldexp64            0x800'3611         Code  Gb  ldexp.o [3]
+__iar_lookup_ttioh       0x800'3d53    0x4  Code  Gb  XShttio.o [2]
+__iar_program_start      0x800'5f49         Code  Gb  cstartup_M.o [4]
+__iar_scalbln64          0x800'3611         Code  Gb  ldexp.o [3]
+__iar_scalbn64           0x800'3611         Code  Gb  ldexp.o [3]
+__iar_sh_stdout          0x800'5da7   0x20  Code  Gb  iarwstd.o [5]
+__iar_sh_write           0x800'5d13   0x22  Code  Gb  iarwrite.o [5]
+__iar_softfp___iar_frexp64
+                         0x800'3541         Code  Gb  frexp.o [3]
+__iar_softfp_frexp       0x800'3541         Code  Gb  frexp.o [3]
+__iar_softfp_frexpl      0x800'3541         Code  Gb  frexp.o [3]
+__iar_ttio_guard_lock    0x800'3d25   0x1e  Code  Gb  XShttio.o [2]
+__iar_ttio_guard_unlock
+                         0x800'3d43   0x10  Code  Gb  XShttio.o [2]
+__iar_ttio_handles      0x2000'006c    0x8  Data  Lc  XShttio.o [2]
+__iar_zero_init3         0x800'2f9b   0x3a  Code  Gb  zero_init3.o [4]
+__low_level_init         0x800'5de7    0x4  Code  Gb  low_level_init.o [2]
+__vector_table           0x800'0000         Data  Gb  startup_stm32f4xx.o [1]
+__write                  0x800'5d79   0x10  Code  Gb  write.o [5]
+_call_main               0x800'5dd5         Code  Gb  cmain.o [4]
+_exit                    0x800'5df1         Code  Gb  cexit.o [4]
+_main                    0x800'5de3         Code  Gb  cmain.o [4]
+abort                    0x800'3b1b    0x6  Code  Gb  abort.o [2]
+bufchar                  0x800'4c6d   0x20  Code  Gb  MQTTPacket.o [1]
+bufptr                  0x2000'10e0    0x4  Data  Lc  MQTTPacket.o [1]
+check_DHCP_leasedIP      0x800'0f15   0x56  Code  Gb  dhcp.o [1]
+check_DHCP_timeout       0x800'0e81   0x82  Code  Gb  dhcp.o [1]
+close                    0x800'16bd   0x9a  Code  Gb  socket.o [1]
+connect                  0x800'1757  0x156  Code  Gb  socket.o [1]
+ctlnetwork               0x800'3f29   0x54  Code  Gb  wizchip_conf.o [1]
+ctlwizchip               0x800'3df1  0x138  Code  Gb  wizchip_conf.o [1]
+cycle                    0x800'472b  0x14a  Code  Gb  MQTTClient.o [1]
+decodePacket             0x800'44eb   0x62  Code  Lc  MQTTClient.o [1]
+default_ip_assign        0x800'0189   0x2e  Code  Gb  dhcp.o [1]
+default_ip_conflict      0x800'01db   0x20  Code  Gb  dhcp.o [1]
+default_ip_update        0x800'01b7   0x24  Code  Gb  dhcp.o [1]
+deliverMessage           0x800'4645   0x8e  Code  Gb  MQTTClient.o [1]
+dhcp_ip_assign          0x2000'007c    0x4  Data  Gb  dhcp.o [1]
+dhcp_ip_conflict        0x2000'0084    0x4  Data  Gb  dhcp.o [1]
+dhcp_ip_update          0x2000'0080    0x4  Data  Gb  dhcp.o [1]
+dhcp_lease_time         0x2000'0074    0x4  Data  Gb  dhcp.o [1]
+dhcp_retry_count        0x2000'10f2    0x1  Data  Gb  dhcp.o [1]
+dhcp_state              0x2000'10f1    0x1  Data  Gb  dhcp.o [1]
+dhcp_tick_1s            0x2000'10cc    0x4  Data  Gb  dhcp.o [1]
+dhcp_tick_next          0x2000'0078    0x4  Data  Gb  dhcp.o [1]
+disconnect               0x800'18ad   0xae  Code  Gb  socket.o [1]
+exit                     0x800'5deb    0x4  Code  Gb  exit.o [2]
+gDataBuff               0x2000'0094  0x800  Data  Gb  main.o [1]
+gWIZNETINFO             0x2000'004c   0x18  Data  Gb  main.o [1]
+getDNSfromDHCP           0x800'105b   0x14  Code  Gb  dhcp.o [1]
+getGWfromDHCP            0x800'1033   0x14  Code  Gb  dhcp.o [1]
+getIPfromDHCP            0x800'101f   0x14  Code  Gb  dhcp.o [1]
+getNextPacketId          0x800'4433   0x18  Code  Lc  MQTTClient.o [1]
+getSNfromDHCP            0x800'1047   0x14  Code  Gb  dhcp.o [1]
+getSn_RX_RSR             0x800'131b   0x82  Code  Gb  w5500.o [1]
+getSn_TX_FSR             0x800'1299   0x82  Code  Gb  w5500.o [1]
+isTopicMatched           0x800'45d1   0x74  Code  Lc  MQTTClient.o [1]
+keepalive                0x800'46d3   0x58  Code  Gb  MQTTClient.o [1]
+ldexp                    0x800'3611         Code  Gb  ldexp.o [3]
+ldexpl                   0x800'3611         Code  Gb  ldexp.o [3]
+main                     0x800'5867   0x5a  Code  Gb  main.o [1]
+makeDHCPMSG              0x800'0237  0x15a  Code  Gb  dhcp.o [1]
+memchr                   0x800'306d         Code  Gb  memchr.o [4]
+my_ip_assign             0x800'582d   0x30  Code  Gb  main.o [1]
+my_ip_conflict           0x800'585d    0xa  Code  Gb  main.o [1]
+opts                    0x2000'0028   0x24  Data  Gb  mqtt_func.o [1]
+pDHCPMSG                0x2000'10d4    0x4  Data  Gb  dhcp.o [1]
+parseDHCPMSG             0x800'0b19  0x1ac  Code  Gb  dhcp.o [1]
+printf                   0x800'5755   0x28  Code  Gb  printf.o [2]
+putchar                  0x800'5d59   0x20  Code  Gb  putchar.o [2]
+readChar                 0x800'4cb3   0x10  Code  Gb  MQTTPacket.o [1]
+readInt                  0x800'4c9b   0x18  Code  Gb  MQTTPacket.o [1]
+readMQTTLenString        0x800'4d65   0x3a  Code  Gb  MQTTPacket.o [1]
+readPacket               0x800'454d   0x84  Code  Lc  MQTTClient.o [1]
+recv                     0x800'1ae9  0x148  Code  Gb  socket.o [1]
+recvfrom                 0x800'1e33  0x362  Code  Gb  socket.o [1]
+reg_dhcp_cbfunc          0x800'01fb   0x3c  Code  Gb  dhcp.o [1]
+reg_wizchip_cris_cbfunc
+                         0x800'3d77   0x28  Code  Gb  wizchip_conf.o [1]
+reg_wizchip_cs_cbfunc    0x800'3d9f   0x28  Code  Gb  wizchip_conf.o [1]
+reg_wizchip_spi_cbfunc   0x800'3dc7   0x2a  Code  Gb  wizchip_conf.o [1]
+reset_DHCP_timeout       0x800'100b   0x14  Code  Gb  dhcp.o [1]
+scalbln                  0x800'3611         Code  Gb  ldexp.o [3]
+scalblnl                 0x800'3611         Code  Gb  ldexp.o [3]
+scalbn                   0x800'3611         Code  Gb  ldexp.o [3]
+scalbnl                  0x800'3611         Code  Gb  ldexp.o [3]
+scale                    0x800'284f   0x46  Code  Lc  xprintffull_nomb.o [2]
+sec_hand                0x2000'10e8    0x4  Data  Lc  xfail_s.o [2]
+send                     0x800'195b  0x18e  Code  Gb  socket.o [1]
+sendPacket               0x800'444b   0x62  Code  Lc  MQTTClient.o [1]
+send_DHCP_DECLINE        0x800'0929  0x1f0  Code  Gb  dhcp.o [1]
+send_DHCP_DISCOVER       0x800'0391  0x230  Code  Gb  dhcp.o [1]
+send_DHCP_REQUEST        0x800'05c1  0x368  Code  Gb  dhcp.o [1]
+sendto                   0x800'1c31  0x202  Code  Gb  socket.o [1]
+sock_any_port           0x2000'0090    0x2  Data  Lc  socket.o [1]
+sock_io_mode            0x2000'10ec    0x2  Data  Lc  socket.o [1]
+sock_is_sending         0x2000'10ee    0x2  Data  Lc  socket.o [1]
+sock_pack_info          0x2000'10ac    0x8  Data  Gb  socket.o [1]
+sock_remained_size      0x2000'1094   0x10  Data  Lc  socket.o [1]
+socket                   0x800'1535  0x188  Code  Gb  socket.o [1]
+socket_sn               0x2000'10f3    0x1  Data  Gb  main.o [1]
+sprintf                  0x800'5a1d   0x40  Code  Gb  sprintf.o [2]
+strchr                   0x800'2fd5         Code  Gb  strchr.o [4]
+strlen                   0x800'3035         Code  Gb  strlen.o [4]
+strncmp                  0x800'5305   0x28  Code  Gb  strncmp.o [2]
+targetIP                0x2000'0088    0x4  Data  Gb  mqtt_func.o [1]
+targetPort              0x2000'008c    0x4  Data  Gb  mqtt_func.o [1]
+tempBuffer              0x2000'0894  0x800  Data  Gb  mqtt_func.o [1]
+toStop                  0x2000'10d8    0x4  Data  Gb  mqtt_func.o [1]
+ttio_guard              0x2000'10f5    0x1  Data  Lc  XShttio.o [2]
+w5500_disconnect         0x800'4b81    0xc  Code  Gb  mqtt_interface.o [1]
+w5500_read               0x800'4b1d   0x38  Code  Gb  mqtt_interface.o [1]
+w5500_write              0x800'4b55   0x2c  Code  Gb  mqtt_interface.o [1]
+waitfor                  0x800'48ad   0x2a  Code  Gb  MQTTClient.o [1]
+wiz_recv_data            0x800'1433   0x96  Code  Gb  w5500.o [1]
+wiz_recv_ignore          0x800'14c9   0x6c  Code  Gb  w5500.o [1]
+wiz_send_data            0x800'139d   0x96  Code  Gb  w5500.o [1]
+wizchip_bus_readdata     0x800'3d69    0x4  Code  Gb  wizchip_conf.o [1]
+wizchip_bus_writedata    0x800'3d6d    0x4  Code  Gb  wizchip_conf.o [1]
+wizchip_clrinterrupt     0x800'40a3   0x24  Code  Gb  wizchip_conf.o [1]
+wizchip_cris_enter       0x800'3d61    0x2  Code  Gb  wizchip_conf.o [1]
+wizchip_cris_exit        0x800'3d63    0x2  Code  Gb  wizchip_conf.o [1]
+wizchip_cs_deselect      0x800'3d67    0x2  Code  Gb  wizchip_conf.o [1]
+wizchip_cs_select        0x800'3d65    0x2  Code  Gb  wizchip_conf.o [1]
+wizchip_getinterrupt     0x800'40c7   0x2c  Code  Gb  wizchip_conf.o [1]
+wizchip_getinterruptmask
+                         0x800'4115   0x28  Code  Gb  wizchip_conf.o [1]
+wizchip_getnetinfo       0x800'4329   0x52  Code  Gb  wizchip_conf.o [1]
+wizchip_getnetmode       0x800'43c9    0xa  Code  Gb  wizchip_conf.o [1]
+wizchip_gettimeout       0x800'43ff   0x2c  Code  Gb  wizchip_conf.o [1]
+wizchip_init             0x800'3ff3   0xb0  Code  Gb  wizchip_conf.o [1]
+wizchip_setinterruptmask
+                         0x800'40f3   0x22  Code  Gb  wizchip_conf.o [1]
+wizchip_setnetinfo       0x800'42d7   0x52  Code  Gb  wizchip_conf.o [1]
+wizchip_setnetmode       0x800'43a1   0x28  Code  Gb  wizchip_conf.o [1]
+wizchip_settimeout       0x800'43d3   0x2c  Code  Gb  wizchip_conf.o [1]
+wizchip_spi_readbyte     0x800'3d71    0x4  Code  Gb  wizchip_conf.o [1]
+wizchip_spi_writebyte    0x800'3d75    0x2  Code  Gb  wizchip_conf.o [1]
+wizchip_sw_reset         0x800'3f7d   0x76  Code  Gb  wizchip_conf.o [1]
+wizphy_getphyconf        0x800'41fb   0x76  Code  Gb  wizchip_conf.o [1]
+wizphy_getphylink        0x800'413d   0x18  Code  Gb  wizchip_conf.o [1]
+wizphy_getphypmode       0x800'4155   0x1e  Code  Gb  wizchip_conf.o [1]
+wizphy_reset             0x800'4173   0x34  Code  Gb  wizchip_conf.o [1]
+wizphy_setphyconf        0x800'41a7   0x54  Code  Gb  wizchip_conf.o [1]
+wizphy_setphypmode       0x800'4271   0x66  Code  Gb  wizchip_conf.o [1]
+writeCString             0x800'4cf9   0x2a  Code  Gb  MQTTPacket.o [1]
+writeChar                0x800'4cc3    0xc  Code  Gb  MQTTPacket.o [1]
+writeInt                 0x800'4ccf   0x2a  Code  Gb  MQTTPacket.o [1]
+writeMQTTString          0x800'4d23   0x42  Code  Gb  MQTTPacket.o [1]
+
+
+[1] = C:\Users\buidi\OneDrive\Desktop\Congty\PRJ5_3S\STM32F4-W5500-DHCP-MQTT\STM32F4_W5500_DHCP\Debug\Obj
+[2] = dl7M_tln.a
+[3] = m7M_tls.a
+[4] = rt7M_tl.a
+[5] = shb_l.a
+
+  24 168 bytes of readonly  code memory
+     812 bytes of readonly  data memory
+  12 532 bytes of readwrite data memory
+
+Errors: none
+Warnings: none
